@@ -138,7 +138,7 @@ this.router.navigate(['servers'])
 ```
 ### Angular Cord
 
-```
+```javascript
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -158,9 +158,4 @@ export class HomeComponent implements OnInit {
   }
 }
 
-```
-```javascript
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
 ```
