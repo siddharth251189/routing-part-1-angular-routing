@@ -3,14 +3,14 @@
 ## Router imports
 
 The Angular Router is an optional service that presents a particular component view for a given URL. It is not part of the Angular core. It is in its own library package, @angular/router. Import what you need from it as you would from any other Angular package.
-```
+```Javascript
 import { RouterModule, Routes } from '@angular/router';
 ```
 
 ## Configuration
 
 ### app.module.ts
-```
+```javascript
 import { Routes, RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -57,7 +57,7 @@ export class AppModule { }
 After configure the routes in the app.module.ts file we need to add router outlet into our view file as following below:
 
 ### app.component.html
-```
+```javascript
 <div class="container">
 <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
@@ -72,7 +72,7 @@ After configure the routes in the app.module.ts file we need to add router outle
 ## Router Link
 We use routerLink on place of href into <a> tag for achieving the one page application functionality(change page without the refresh page) 
 
-```
+```html
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
@@ -100,7 +100,7 @@ For styleing active router link we need to add a active class to link and with h
 #### routerLinkActive="className"
 #### [routerLinkActiveOptions]="{exact:true}"
 
- ```
+```html
  <ul class="nav nav-tabs">
         <li
          role="presentation"
@@ -133,7 +133,7 @@ For navigate Programmatically we need to follow steps as given below:
 this.router.navigate(['servers'])
 
 ### HTML
-```
+```javascript
 <button class="btn btn-primary" (click)="onLoadServers()">Load Server</button>
 ```
 ### Angular Cord
